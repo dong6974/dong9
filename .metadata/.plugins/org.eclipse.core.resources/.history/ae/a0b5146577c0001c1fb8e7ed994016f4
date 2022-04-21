@@ -1,0 +1,17 @@
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Testjava {
+
+	public static void main(String[] args) {
+		
+		int num = add(10,20);
+		System.out.println(num);
+	}
+	
+	static int add(int i, int j) {
+		
+		return i+j;
+	}
+}
+	

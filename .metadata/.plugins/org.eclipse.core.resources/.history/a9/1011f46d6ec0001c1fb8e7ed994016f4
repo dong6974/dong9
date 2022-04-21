@@ -1,0 +1,30 @@
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Testjava {
+
+	public static void main(String[] args) {
+		
+		int [] nArr = { 9, 6, 7, 3, 5 };
+		
+		for(int i = 0; i < nArr.length; i++) {
+			
+			int index=i;
+		
+		for(int j = i + 1; j < nArr.length; j++) {
+			
+			if(nArr[index] > nArr[j]) index = j;
+		}
+		
+		if(index != i) {
+				int temp = nArr[index];
+				nArr[index] = nArr[i];
+				nArr[i] = temp;
+			}
+			System.out.println(i+1+"È¸Àü " + Arrays.toString(nArr));
+		}
+		System.out.println(Arrays.toString(nArr));	
+	}
+		
+}
+	
